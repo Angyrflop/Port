@@ -1,0 +1,472 @@
+:root {
+      --color-primary: #333333;
+      --color-dark: #000000;
+      --font-cursive: "Ephesis", cursive;
+      --font-sans: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fdfeff;
+      margin: 20px;
+      overflow-x: hidden;
+    }
+
+    .IntroImg {
+      display: block;
+      margin: 0 auto;
+      width: 400px;
+      height: auto;
+      transform: translateY(252px) rotate(-10deg);
+    }
+
+    .IntroText {
+      text-align: center;
+      font-size: 125px;
+      color: var(--color-primary);
+      font-family: var(--font-cursive);
+      transform: translateY(-512px);
+    }
+
+    .Portfolio {
+      font-size: 150px;
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      text-align: center;
+      transform: translateY(-111px);
+    }
+
+    .Programmer {
+      font-size: 20px;
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      text-align: center;
+      transform: translateY(-200px);
+    }
+
+    .AboutMe {
+      font-size: 100px;
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      line-height: 1.2;
+      transform: translateX(100px);
+    }
+
+    .AboutMeText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 30px;
+      transform: translateX(100px);
+    }
+
+    .AboutMeImg1 {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      transform: translateX(175px) translateY(-300px) rotate(-10deg);
+    }
+
+    .AboutMeImg2 {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      transform: translateX(500px);
+    }
+
+    .MySkills {
+      font-size: 80px;
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      text-align: left;
+    }
+
+    .SkillsImg {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+      transform: translateX(-700px) translateY(150px);
+    }
+
+    .ProgrammingLanguages {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 30px;
+      transform: translateX(900px) translateY(-150px);
+    }
+
+    .ProgrammingLanguagesText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+      transform: translateX(900px) translateY(-150px);
+    }
+
+    .SoftwareSkills {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 30px;
+      transform: translateX(900px) translateY(-100px);
+    }
+
+    .SoftwareSkillsText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+      transform: translateX(900px) translateY(-100px);
+    }
+
+    .OtherSkills {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 30px;
+      transform: translateX(900px) translateY(-50px);
+    }
+
+    .OtherSkillsText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+      transform: translateX(900px) translateY(-50px);
+    }
+
+    .MyFreeTimeHeader {
+      font-size: 80px;
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      text-align: left;
+      transform: translateY(50px);
+    }
+
+    .MyFreeTimeText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+      transform: translateY(50px);
+    }
+
+    .FreeTimeImg1 {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      transform: translateX(-50px) translateY(-450px) rotate(-10deg);
+    }
+
+    .FreeTimeImg2 {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      transform: translateX(300px) translateY(-200px) rotate(10deg);
+    }
+
+    .MyProjectsHeader {
+      font-size: 80px;
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      text-align: left;
+      transform: translateY(110px);
+      margin-bottom: 100px;
+    }
+
+    .AlbertSchweitzerWebsiteHeader {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 35px;
+      transform: translateX(100px);
+    }
+
+    .AlbertSchweitzerWebsiteText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+      transform: translateX(100px);
+    }
+
+    .ProjectImgAlbert {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      transform: translateX(400px) translateY(-200px) rotate(10deg);
+    }
+
+    .LoginProjektHeader {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 35px;
+      transform: translateX(100px);
+    }
+
+    .LoginProjektText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+      transform: translateX(100px);
+    }
+
+    .ProjectImgLogin {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      transform: translateX(400px) translateY(-250px) rotate(-10deg);
+    }
+
+    .NBodySimulationHeader {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 35px;
+      transform: translateX(100px);
+    }
+
+    .NBodySimulationText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+      transform: translateX(100px);
+    }
+
+    .ProjectImgNBody {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      transform: translateX(400px) translateY(-150px) rotate(10deg);
+    }
+
+    .ContactMeHeader {
+      font-size: 80px;
+      color: var(--color-primary);
+      font-family: var(--font-sans);
+      text-align: left;
+      transform: translateY(50px);
+    }
+
+    .ContactMeText {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+    }
+
+    .ContactMeText + p {
+      color: var(--color-dark);
+      font-family: var(--font-sans);
+      font-size: 25px;
+    }
+
+    .ContactMeText + p a {
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        margin: 10px;
+      }
+
+      .IntroImg {
+        width: 250px;
+        transform: translateY(100px) rotate(-10deg);
+      }
+
+      .IntroText {
+        font-size: 60px;
+        transform: translateY(-200px);
+      }
+
+      .Portfolio {
+        font-size: 70px;
+        transform: translateY(-50px);
+      }
+
+      .Programmer {
+        font-size: 16px;
+        transform: translateY(-80px);
+      }
+
+      .AboutMe {
+        font-size: 50px;
+        transform: translateX(20px);
+      }
+
+      .AboutMeText {
+        font-size: 18px;
+        transform: translateX(20px);
+        line-height: 1.6;
+      }
+
+      .AboutMeImg1 {
+        width: 180px;
+        transform: translateX(50px) translateY(-150px) rotate(-10deg);
+      }
+
+      .AboutMeImg2 {
+        width: 180px;
+        transform: translateX(150px) translateY(-100px) rotate(10deg);
+      }
+
+      .MySkills {
+        font-size: 50px;
+        text-align: center;
+      }
+
+      .SkillsImg {
+        width: 150px;
+        transform: translateX(0) translateY(0);
+        margin-bottom: 30px;
+      }
+
+      .ProgrammingLanguages {
+        font-size: 24px;
+        transform: translateX(20px) translateY(0);
+      }
+
+      .ProgrammingLanguagesText {
+        font-size: 18px;
+        transform: translateX(20px) translateY(0);
+      }
+
+      .SoftwareSkills {
+        font-size: 24px;
+        transform: translateX(20px) translateY(0);
+      }
+
+      .SoftwareSkillsText {
+        font-size: 18px;
+        transform: translateX(20px) translateY(0);
+      }
+
+      .OtherSkills {
+        font-size: 24px;
+        transform: translateX(20px) translateY(0);
+      }
+
+      .OtherSkillsText {
+        font-size: 18px;
+        transform: translateX(20px) translateY(0);
+      }
+
+     
+      .MyFreeTimeHeader {
+        font-size: 50px;
+        text-align: center;
+        transform: translateY(20px);
+      }
+
+      .MyFreeTimeText {
+        font-size: 18px;
+        transform: translateY(20px);
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .FreeTimeImg1 {
+        width: 180px;
+        transform: translateX(30px) translateY(-200px) rotate(-10deg);
+      }
+
+      .FreeTimeImg2 {
+        width: 180px;
+        transform: translateX(150px) translateY(-100px) rotate(10deg);
+      }
+
+      .MyProjectsHeader {
+        font-size: 50px;
+        transform: translateY(50px);
+        margin-bottom: 50px;
+      }
+
+      .AlbertSchweitzerWebsiteHeader,
+      .LoginProjektHeader,
+      .NBodySimulationHeader {
+        font-size: 24px;
+        transform: translateX(20px);
+      }
+
+      .AlbertSchweitzerWebsiteText,
+      .LoginProjektText,
+      .NBodySimulationText {
+        font-size: 16px;
+        transform: translateX(20px);
+        line-height: 1.6;
+      }
+
+      .ProjectImgAlbert {
+        width: 200px;
+        transform: translateX(80px) translateY(-100px) rotate(10deg);
+      }
+
+      .ProjectImgLogin {
+        width: 200px;
+        transform: translateX(80px) translateY(-120px) rotate(-10deg);
+      }
+
+      .ProjectImgNBody {
+        width: 200px;
+        transform: translateX(80px) translateY(-80px) rotate(10deg);
+      }
+
+     
+      .ContactMeHeader {
+        font-size: 50px;
+        text-align: center;
+        transform: translateY(20px);
+      }
+
+      .ContactMeText {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      .ContactMeText + p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.8;
+      }
+    }
+
+    
+    @media screen and (max-width: 480px) {
+      .IntroImg {
+        width: 200px;
+        transform: translateY(80px) rotate(-10deg);
+      }
+
+      .IntroText {
+        font-size: 45px;
+        transform: translateY(-150px);
+      }
+
+      .Portfolio {
+        font-size: 50px;
+        transform: translateY(-30px);
+      }
+
+      .AboutMe {
+        font-size: 40px;
+      }
+
+      .AboutMeImg1,
+      .AboutMeImg2,
+      .FreeTimeImg1,
+      .FreeTimeImg2,
+      .ProjectImgAlbert,
+      .ProjectImgLogin,
+      .ProjectImgNBody {
+        width: 150px;
+      }
+
+      .ProjectImgAlbert,
+      .ProjectImgLogin,
+      .ProjectImgNBody {
+        transform: translateX(40px) translateY(-80px) rotate(10deg);
+      }
+    }
