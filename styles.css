@@ -1,472 +1,408 @@
-:root {
-      --color-primary: #333333;
-      --color-dark: #000000;
-      --font-cursive: "Ephesis", cursive;
-      --font-sans: Arial, Helvetica, sans-serif;
-    }
-
-    * {
+   * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      background-color: #fdfeff;
-      margin: 20px;
+      background: linear-gradient(135deg, #fdfeff 0%, #e8f4f8 100%);
+      font-family: 'Poppins', Arial, sans-serif;
+      color: #333;
       overflow-x: hidden;
+      padding: 20px;
     }
 
-    .IntroImg {
-      display: block;
-      margin: 0 auto;
-      width: 400px;
-      height: auto;
-      transform: translateY(252px) rotate(-10deg);
-    }
-
-    .IntroText {
+    /* Intro Section */
+    .intro-section {
       text-align: center;
-      font-size: 125px;
-      color: var(--color-primary);
-      font-family: var(--font-cursive);
-      transform: translateY(-512px);
-    }
-
-    .Portfolio {
-      font-size: 150px;
-      color: var(--color-primary);
-      font-family: var(--font-sans);
-      text-align: center;
-      transform: translateY(-111px);
-    }
-
-    .Programmer {
-      font-size: 20px;
-      color: var(--color-primary);
-      font-family: var(--font-sans);
-      text-align: center;
-      transform: translateY(-200px);
-    }
-
-    .AboutMe {
-      font-size: 100px;
-      color: var(--color-primary);
-      font-family: var(--font-sans);
-      line-height: 1.2;
-      transform: translateX(100px);
-    }
-
-    .AboutMeText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 30px;
-      transform: translateX(100px);
-    }
-
-    .AboutMeImg1 {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
-      height: auto;
-      transform: translateX(175px) translateY(-300px) rotate(-10deg);
-    }
-
-    .AboutMeImg2 {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
-      height: auto;
-      transform: translateX(500px);
-    }
-
-    .MySkills {
-      font-size: 80px;
-      color: var(--color-primary);
-      font-family: var(--font-sans);
-      text-align: left;
-    }
-
-    .SkillsImg {
-      display: block;
-      margin: 0 auto;
-      width: 200px;
-      height: auto;
-      transform: translateX(-700px) translateY(150px);
-    }
-
-    .ProgrammingLanguages {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 30px;
-      transform: translateX(900px) translateY(-150px);
-    }
-
-    .ProgrammingLanguagesText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
-      transform: translateX(900px) translateY(-150px);
-    }
-
-    .SoftwareSkills {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 30px;
-      transform: translateX(900px) translateY(-100px);
-    }
-
-    .SoftwareSkillsText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
-      transform: translateX(900px) translateY(-100px);
-    }
-
-    .OtherSkills {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 30px;
-      transform: translateX(900px) translateY(-50px);
-    }
-
-    .OtherSkillsText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
-      transform: translateX(900px) translateY(-50px);
-    }
-
-    .MyFreeTimeHeader {
-      font-size: 80px;
-      color: var(--color-primary);
-      font-family: var(--font-sans);
-      text-align: left;
-      transform: translateY(50px);
-    }
-
-    .MyFreeTimeText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
-      transform: translateY(50px);
-    }
-
-    .FreeTimeImg1 {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
-      height: auto;
-      transform: translateX(-50px) translateY(-450px) rotate(-10deg);
-    }
-
-    .FreeTimeImg2 {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
-      height: auto;
-      transform: translateX(300px) translateY(-200px) rotate(10deg);
-    }
-
-    .MyProjectsHeader {
-      font-size: 80px;
-      color: var(--color-primary);
-      font-family: var(--font-sans);
-      text-align: left;
-      transform: translateY(110px);
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
       margin-bottom: 100px;
     }
 
-    .AlbertSchweitzerWebsiteHeader {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 35px;
-      transform: translateX(100px);
-    }
-
-    .AlbertSchweitzerWebsiteText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
-      transform: translateX(100px);
-    }
-
-    .ProjectImgAlbert {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
+    .intro-img {
+      width: 350px;
       height: auto;
-      transform: translateX(400px) translateY(-200px) rotate(10deg);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      transform: rotate(-8deg);
+      transition: transform 0.5s ease;
+      margin-bottom: 40px;
     }
 
-    .LoginProjektHeader {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 35px;
-      transform: translateX(100px);
+    .intro-img:hover {
+      transform: rotate(-3deg) scale(1.05);
     }
 
-    .LoginProjektText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
-      transform: translateX(100px);
+    .intro-text {
+      font-family: 'Ephesis', cursive;
+      font-size: 100px;
+      color: #333;
+      margin-bottom: -20px;
     }
 
-    .ProjectImgLogin {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
-      height: auto;
-      transform: translateX(400px) translateY(-250px) rotate(-10deg);
+    .portfolio-title {
+      font-size: 120px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 10px;
+      letter-spacing: -2px;
     }
 
-    .NBodySimulationHeader {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 35px;
-      transform: translateX(100px);
+    .programmer {
+      font-size: 24px;
+      color: #666;
+      font-weight: 300;
+      letter-spacing: 3px;
     }
 
-    .NBodySimulationText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
-      transform: translateX(100px);
+    /* Content sections */
+    .content-section {
+      max-width: 1200px;
+      margin: 150px auto;
+      position: relative;
     }
 
-    .ProjectImgNBody {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
-      height: auto;
-      transform: translateX(400px) translateY(-150px) rotate(10deg);
-    }
-
-    .ContactMeHeader {
+    .section-title {
       font-size: 80px;
-      color: var(--color-primary);
-      font-family: var(--font-sans);
-      text-align: left;
-      transform: translateY(50px);
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 40px;
+      line-height: 1.1;
     }
 
-    .ContactMeText {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
+    .section-text {
+      font-size: 22px;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 40px;
+      max-width: 600px;
     }
 
-    .ContactMeText + p {
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 25px;
+    /* About Me Section */
+    .about-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
     }
 
-    .ContactMeText + p a {
-      color: var(--color-primary);
+    .about-images {
+      position: relative;
+      height: 400px;
+    }
+
+    .about-img {
+      width: 280px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      transition: transform 0.3s ease;
+    }
+
+    .about-img-1 {
+      top: 0;
+      left: 50px;
+      transform: rotate(-5deg);
+      z-index: 2;
+    }
+
+    .about-img-1:hover {
+      transform: rotate(-2deg) scale(1.05);
+    }
+
+    .about-img-2 {
+      bottom: 0;
+      right: 50px;
+      transform: rotate(7deg);
+      z-index: 1;
+    }
+
+    .about-img-2:hover {
+      transform: rotate(4deg) scale(1.05);
+    }
+
+    /* Skills Section */
+    .skills-layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .skills-img {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .skill-category h3 {
+      font-size: 26px;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .skill-category ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skill-category li {
+      font-size: 20px;
+      color: #555;
+      padding: 8px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .skill-category li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #4a9eff;
+      font-weight: bold;
+    }
+
+    /* Free Time Section */
+    .freetime-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .freetime-images {
+      position: relative;
+      height: 450px;
+    }
+
+    .freetime-img {
+      width: 280px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      transition: transform 0.3s ease;
+    }
+
+    .freetime-img-1 {
+      top: 20px;
+      left: 0;
+      transform: rotate(-8deg);
+    }
+
+    .freetime-img-1:hover {
+      transform: rotate(-4deg) scale(1.05);
+    }
+
+    .freetime-img-2 {
+      bottom: 20px;
+      right: 0;
+      transform: rotate(8deg);
+    }
+
+    .freetime-img-2:hover {
+      transform: rotate(4deg) scale(1.05);
+    }
+
+    /* Projects Section */
+    .projects-section {
+      margin-top: 150px;
+    }
+
+    .project-item {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 60px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 40px;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    }
+
+    .project-item:nth-child(even) {
+      grid-template-columns: 300px 1fr;
+    }
+
+    .project-item:nth-child(even) .project-img {
+      order: -1;
+    }
+
+    .project-content h4 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .project-content p {
+      font-size: 19px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .project-img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transform: rotate(3deg);
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:nth-child(even) .project-img {
+      transform: rotate(-3deg);
+    }
+
+    .project-img:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+
+    /* Contact Section */
+    .contact-section {
+      text-align: center;
+      max-width: 800px;
+      margin: 150px auto;
+      background: white;
+      padding: 60px;
+      border-radius: 30px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-section .section-title {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+
+    .contact-text {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .contact-links {
+      font-size: 20px;
+      line-height: 2;
+      color: #555;
+    }
+
+    .contact-links a {
+      color: #4a9eff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .contact-links a:hover {
+      color: #2e7fd6;
       text-decoration: underline;
     }
 
-    @media screen and (max-width: 768px) {
-      body {
-        margin: 10px;
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .about-section,
+      .skills-layout,
+      .freetime-layout,
+      .project-item,
+      .project-item:nth-child(even) {
+        grid-template-columns: 1fr;
       }
 
-      .IntroImg {
-        width: 250px;
-        transform: translateY(100px) rotate(-10deg);
+      .project-item:nth-child(even) .project-img {
+        order: 0;
       }
 
-      .IntroText {
-        font-size: 60px;
-        transform: translateY(-200px);
+      .about-images,
+      .freetime-images {
+        height: 300px;
+        margin: 40px auto;
       }
 
-      .Portfolio {
-        font-size: 70px;
-        transform: translateY(-50px);
-      }
-
-      .Programmer {
-        font-size: 16px;
-        transform: translateY(-80px);
-      }
-
-      .AboutMe {
-        font-size: 50px;
-        transform: translateX(20px);
-      }
-
-      .AboutMeText {
-        font-size: 18px;
-        transform: translateX(20px);
-        line-height: 1.6;
-      }
-
-      .AboutMeImg1 {
-        width: 180px;
-        transform: translateX(50px) translateY(-150px) rotate(-10deg);
-      }
-
-      .AboutMeImg2 {
-        width: 180px;
-        transform: translateX(150px) translateY(-100px) rotate(10deg);
-      }
-
-      .MySkills {
-        font-size: 50px;
-        text-align: center;
-      }
-
-      .SkillsImg {
-        width: 150px;
-        transform: translateX(0) translateY(0);
-        margin-bottom: 30px;
-      }
-
-      .ProgrammingLanguages {
-        font-size: 24px;
-        transform: translateX(20px) translateY(0);
-      }
-
-      .ProgrammingLanguagesText {
-        font-size: 18px;
-        transform: translateX(20px) translateY(0);
-      }
-
-      .SoftwareSkills {
-        font-size: 24px;
-        transform: translateX(20px) translateY(0);
-      }
-
-      .SoftwareSkillsText {
-        font-size: 18px;
-        transform: translateX(20px) translateY(0);
-      }
-
-      .OtherSkills {
-        font-size: 24px;
-        transform: translateX(20px) translateY(0);
-      }
-
-      .OtherSkillsText {
-        font-size: 18px;
-        transform: translateX(20px) translateY(0);
-      }
-
-     
-      .MyFreeTimeHeader {
-        font-size: 50px;
-        text-align: center;
-        transform: translateY(20px);
-      }
-
-      .MyFreeTimeText {
-        font-size: 18px;
-        transform: translateY(20px);
-        line-height: 1.6;
-        text-align: center;
-      }
-
-      .FreeTimeImg1 {
-        width: 180px;
-        transform: translateX(30px) translateY(-200px) rotate(-10deg);
-      }
-
-      .FreeTimeImg2 {
-        width: 180px;
-        transform: translateX(150px) translateY(-100px) rotate(10deg);
-      }
-
-      .MyProjectsHeader {
-        font-size: 50px;
-        transform: translateY(50px);
-        margin-bottom: 50px;
-      }
-
-      .AlbertSchweitzerWebsiteHeader,
-      .LoginProjektHeader,
-      .NBodySimulationHeader {
-        font-size: 24px;
-        transform: translateX(20px);
-      }
-
-      .AlbertSchweitzerWebsiteText,
-      .LoginProjektText,
-      .NBodySimulationText {
-        font-size: 16px;
-        transform: translateX(20px);
-        line-height: 1.6;
-      }
-
-      .ProjectImgAlbert {
-        width: 200px;
-        transform: translateX(80px) translateY(-100px) rotate(10deg);
-      }
-
-      .ProjectImgLogin {
-        width: 200px;
-        transform: translateX(80px) translateY(-120px) rotate(-10deg);
-      }
-
-      .ProjectImgNBody {
-        width: 200px;
-        transform: translateX(80px) translateY(-80px) rotate(10deg);
-      }
-
-     
-      .ContactMeHeader {
-        font-size: 50px;
-        text-align: center;
-        transform: translateY(20px);
-      }
-
-      .ContactMeText {
-        font-size: 16px;
-        text-align: center;
-        line-height: 1.6;
-      }
-
-      .ContactMeText + p {
-        font-size: 16px;
-        text-align: center;
-        line-height: 1.8;
+      .skills-img {
+        margin: 0 auto;
+        display: block;
       }
     }
 
-    
-    @media screen and (max-width: 480px) {
-      .IntroImg {
-        width: 200px;
-        transform: translateY(80px) rotate(-10deg);
+    @media (max-width: 768px) {
+      .intro-text {
+        font-size: 60px;
       }
 
-      .IntroText {
-        font-size: 45px;
-        transform: translateY(-150px);
+      .portfolio-title {
+        font-size: 70px;
       }
 
-      .Portfolio {
+      .programmer {
+        font-size: 18px;
+      }
+
+      .section-title {
         font-size: 50px;
-        transform: translateY(-30px);
       }
 
-      .AboutMe {
+      .section-text {
+        font-size: 18px;
+      }
+
+      .intro-img {
+        width: 250px;
+      }
+
+      .about-img,
+      .freetime-img {
+        width: 200px;
+      }
+
+      .contact-section {
+        padding: 40px 30px;
+      }
+
+      .project-item {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .intro-text {
+        font-size: 45px;
+      }
+
+      .portfolio-title {
+        font-size: 50px;
+      }
+
+      .section-title {
         font-size: 40px;
       }
 
-      .AboutMeImg1,
-      .AboutMeImg2,
-      .FreeTimeImg1,
-      .FreeTimeImg2,
-      .ProjectImgAlbert,
-      .ProjectImgLogin,
-      .ProjectImgNBody {
-        width: 150px;
-      }
-
-      .ProjectImgAlbert,
-      .ProjectImgLogin,
-      .ProjectImgNBody {
-        transform: translateX(40px) translateY(-80px) rotate(10deg);
+      .content-section {
+        margin: 80px auto;
       }
     }
